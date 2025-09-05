@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "CryptoTrend Alert",
+    "subtitle": "Built with Zara",
+    "description": "CryptoTrend Alert is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://2a7ea2ab16b5489da275742080f081e8-4s1p.vercel.app",
+    "splashImageUrl": "https://2a7ea2ab16b5489da275742080f081e8-4s1p.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://2a7ea2ab16b5489da275742080f081e8-4s1p.vercel.app/image.png",
+    "tagline": "CryptoTrend Alert",
+    "screenshotUrls": [
+      "https://2a7ea2ab16b5489da275742080f081e8-4s1p.vercel.app/screenshot.png",
+      "https://2a7ea2ab16b5489da275742080f081e8-4s1p.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://2a7ea2ab16b5489da275742080f081e8-4s1p.vercel.app/api/webhook"
+  }
+}

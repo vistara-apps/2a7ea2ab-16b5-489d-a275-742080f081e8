@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-700;
+  }
+  
+  body {
+    @apply bg-bg text-text-primary;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-surface border border-gray-700 rounded-lg shadow-card backdrop-blur-sm;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white px-4 py-2 rounded-md font-medium hover:bg-blue-600 transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-surface text-text-primary px-4 py-2 rounded-md font-medium hover:bg-gray-700 transition-all duration-200 border border-gray-600;
+  }
+  
+  .metric-card {
+    @apply glass-card p-4 hover:bg-opacity-80 transition-all duration-200;
+  }
+  
+  .alert-card {
+    @apply glass-card p-4 border-l-4 hover:bg-opacity-80 transition-all duration-200;
+  }
+  
+  .alert-card.breakout {
+    @apply border-l-accent;
+  }
+  
+  .alert-card.trend {
+    @apply border-l-primary;
+  }
+  
+  .alert-card.portfolio {
+    @apply border-l-positive;
+  }
+  
+  .status-positive {
+    @apply text-positive;
+  }
+  
+  .status-negative {
+    @apply text-negative;
+  }
+  
+  .status-neutral {
+    @apply text-text-secondary;
+  }
+}

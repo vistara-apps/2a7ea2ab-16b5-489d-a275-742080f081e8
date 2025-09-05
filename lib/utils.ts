@@ -33,8 +33,19 @@ export function getStatusColor(percentage: number): string {
   return 'status-neutral';
 }
 
-export function cn(...classes: (string | undefined | null | false)[]): string {
-  return classes.filter(Boolean).join(' ');
+export function cn(...classes: (string | undefined | null | false | Record<string, boolean>)[]): string {
+  return classes
+    .map(cls => {
+      if (typeof cls === 'object' && cls !== null) {
+        return Object.entries(cls)
+          .filter(([, condition]) => condition)
+          .map(([className]) => className)
+          .join(' ');
+      }
+      return cls;
+    })
+    .filter(Boolean)
+    .join(' ');
 }
 
 export function generateMockCryptoData() {
